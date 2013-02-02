@@ -102,76 +102,13 @@ textarea {
     margin: 4em 5em;
 }
 
-.unfocused {
-    top: 5em !important;
-    opacity: 0.3 !important;
-}
-
 .card {
+    /* animate transitions to and from this class */
    -webkit-transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -o-transition: all 0.5s ease;
    transition: all 0.5s ease;
-}
 
-.card.code.unfocused {
-    z-index: 910;
-}
-.card.cv.unfocused {
-    z-index: 909;
-}
-.card.blog.unfocused {
-    z-index: 908;
-}
-
-.card.code {
-    top: 10px;
-    -webkit-transform:rotate(-20deg);
-    -moz-transform:rotate(-20deg);
-    -o-transform:rotate(-20deg);
-    -ms-transform:rotate(-20deg);
-    z-index: 1010;
-    left: 60px;
-}
-
-.card.cv{
-    z-index: 1009;
-    left: 20px;
-}
-
-
-.card.blog{
-    top: 35px;
-    left: -20px;
-    z-index: 1008;
-    -webkit-transform:rotate(20deg);
-    -moz-transform:rotate(20deg);
-    -o-transform:rotate(20deg);
-    -ms-transform:rotate(20deg);
-}
-
-a span {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-
-    /* edit: added z-index */
-    z-index: 10000;
-
-    /* edit: fixes overlap error in IE7/8, 
-       make sure you have an empty gif */
-    background-image: url('empty.gif');
-}
-
-h1 {
-    font-family: 'Petit Formal Script', cursive;
-    text-align: center;
-    margin: 2em;
-}
-
-.card {
     float: left;
     position: relative;
     font-family: 'Petit Formal Script', cursive;
@@ -189,6 +126,69 @@ h1 {
     box-shadow: 5px 5px 15px #222;
     border-radius: 0.3em;
     background: white;
+}
+
+.card.code {
+    top: 10px;
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    z-index: 1010;
+    left: 60px;
+}
+
+.card.cv {
+    z-index: 1009;
+    left: 20px;
+}
+
+.card.blog {
+    top: 35px;
+    left: -20px;
+    z-index: 1008;
+    -webkit-transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+}
+
+.unfocused {
+    top: 5em !important;
+    opacity: 0.3 !important;
+}
+
+.card.code.unfocused {
+    z-index: 910;
+}
+
+.card.cv.unfocused {
+    z-index: 909;
+}
+
+.card.blog.unfocused {
+    z-index: 908;
+}
+
+a span {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    /* edit: added z-index */
+    z-index: 10000;
+
+    /* edit: fixes overlap error in IE7/8, 
+       make sure you have an empty gif */
+    background-image: url('empty.gif');
+}
+
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    margin: 2em;
 }
 
 .inner_card {
@@ -243,8 +243,8 @@ h1 {
 
 .card .leading:before {
     position: absolute;
-    left: 2mm;
-    top: 2mm;
+    left: 5px;
+    top: 5px;
 }
 
 .card .lagging:after {
@@ -253,8 +253,8 @@ h1 {
     -o-transform:rotate(180deg);
     -ms-transform:rotate(180deg);
     position: absolute;
-    right: 2mm;
-    bottom: 2mm;
+    right: 5px;
+    bottom: 5px;
 }
 
 .heart.leading:before, .heart.lagging:after,
