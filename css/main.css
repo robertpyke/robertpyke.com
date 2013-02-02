@@ -114,6 +114,16 @@ textarea {
    transition: all 0.5s ease;
 }
 
+.card.code.unfocused {
+  z-index: 910;
+}
+.card.cv.unfocused {
+  z-index: 909;
+}
+.card.blog.unfocused {
+  z-index: 908;
+}
+
 .card.code {
   top: 10px;
   -webkit-transform:rotate(-20deg);
