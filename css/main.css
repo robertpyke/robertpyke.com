@@ -259,7 +259,7 @@ h1 {
 
 .heart.leading:before, .heart.lagging:after,
 .diamond.leading:before, .diamond.lagging:after,
-.club.leading:before, .club.leading:after {
+.club.leading:before, .club.lagging:after {
     padding: 0.5em;
     border-radius: 45%;
     text-shadow: none;
