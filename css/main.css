@@ -209,21 +209,22 @@ h1 {
     background-position: 0 0;
 
     background-image:
-    radial-gradient(midnightblue 9px, transparent 10px),
-    repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
-
-    background-image:
     -webkit-radial-gradient(midnightblue 9px, transparent 10px),
     -webkit-repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
 
     background-image: -moz-radial-gradient(midnightblue 9px, transparent 10px), -moz-repeating-radial-gradient(midnightblue 0pt, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px)
+
+    background-image:
+    radial-gradient(midnightblue 9px, transparent 10px),
+    repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+
 }
 
 .card h2 {
     text-align: center;
     font-size: 18pt;
     background: white;
-    border-radius: 100%;
+    border-radius: 50%;
     margin: 90px auto;
     padding: 1em 0;
     width: 4em;
@@ -255,45 +256,31 @@ h1 {
     bottom: 2mm;
 }
 
-.heart.leading:before, .heart.lagging:after {
-    color: red;
+.heart.leading:before, .heart.lagging:after,
+.diamond.leading:before, .diamond.lagging:after,
+.club.leading:before, .club.leading:after {
     padding: 0.5em;
     border-radius: 45%;
     text-shadow: none;
     background: white;
-    content: "\2665";
     border: solid 2px midnightblue;
     z-index: 1000;
+}
+
+.heart.leading:before, .heart.lagging:after {
+    color: red;
+    content: "\2665";
 }
 
 .diamond.leading:before, .diamond.lagging:after {
     color: red;
-    padding: 0.5em;
-    border-radius: 45%;
-    text-shadow: none;
-    background: white;
     content: "\2666";
-    border: solid 2px midnightblue;
-    z-index: 1000;
 }
 
 .club.leading:before, .club.lagging:after {
     color: black;
-    padding: 0.5em;
-    border-radius: 45%;
-    text-shadow: none;
-    background: white;
     content: "\2663";
-    border: solid 2px midnightblue;
-    z-index: 1000;
 }
-
-
-
-
-
-
-
 
 
 
