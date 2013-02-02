@@ -176,7 +176,12 @@ h1 {
     position: relative;
     font-family: 'Petit Formal Script', cursive;
 
-    /* ratio; 1.39 */
+    /*
+      ratio of a real playing card; 1.39
+      ratio of 285:196; 1.45
+      Provides a whole number of repeats (3 vertical 2 horizontal)
+      of actual pattern 
+    */
     width: 196px;
     height: 285px;
     border: solid 1px midnightblue;
