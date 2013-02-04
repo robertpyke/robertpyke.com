@@ -154,19 +154,22 @@ textarea {
 }
 
 .unfocused {
-    top: 5em !important;
+    top: 60px;
     opacity: 0.3 !important;
 }
 
 .card.code.unfocused {
+    top: 70px;
     z-index: 910;
 }
 
 .card.cv.unfocused {
+    top: 60px;
     z-index: 909;
 }
 
 .card.blog.unfocused {
+    top: 95px;
     z-index: 908;
 }
 
