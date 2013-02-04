@@ -141,6 +141,7 @@ textarea {
 .card.cv {
     z-index: 1009;
     left: 20px;
+    top: 0px;
 }
 
 .card.blog {
