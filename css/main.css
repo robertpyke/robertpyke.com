@@ -154,6 +154,10 @@ textarea {
     -ms-transform:rotate(20deg);
 }
 
+.card:hover {
+  background: lightblue;
+}
+
 .unfocused {
     top: 60px;
     opacity: 0.3 !important;
