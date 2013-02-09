@@ -207,14 +207,14 @@ h1 {
     left: 5px;
     right: 5px;
     bottom: 5px;
-
-    height: 270px;
 }
 
 .inner_card {
     background-color:white;
     background-size: 30px 30px, 90px 90px;
     background-position: 0 0;
+
+    background-image: url("../img/card_background.jpg");
 
     background-image:
     radial-gradient(midnightblue 9px, transparent 10px),
