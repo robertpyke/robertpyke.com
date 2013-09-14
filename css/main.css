@@ -23,9 +23,15 @@ body {
     line-height: 1.4;
 }
 
-.container {
+.rp_container {
     width: 800px;
     margin: auto;
+    clear: both;
+}
+
+.rp_container.treehouse {
+    padding-top: 7em;
+    width: 400px;
 }
 
 /*
@@ -193,7 +199,7 @@ a span {
     background-image: url('empty.gif');
 }
 
-h1 {
+h1.title {
     font-family: 'Petit Formal Script', cursive;
     text-align: center;
     margin: 1.5em;
